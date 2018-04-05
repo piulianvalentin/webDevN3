@@ -1,0 +1,171 @@
+body {
+  margin: 0;
+  font-family: 'PT Sans', sans-serif;
+  min-height: 2000px;
+  position: relative; }
+
+.off-navbar {
+  width: 200vh;
+  padding: 10px 50px 10px 40px;
+  margin-left: auto;
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 900; }
+  .off-navbar .off-navbar-overlay {
+    position: absolute;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(200, 200, 200, 0.3);
+    z-index: 1;
+    top: 0;
+    transform: skew(200deg); }
+  .off-navbar .off-navbar-item-phone {
+    padding-left: 190px;
+    margin-left: 120px; }
+  .off-navbar .off-navbar-item, .off-navbar .off-navbar-item-phone {
+    display: inline-block;
+    padding: 0px 15px; }
+    .off-navbar .off-navbar-item .off-navbar-link, .off-navbar .off-navbar-item .off-navbar-link-phone, .off-navbar .off-navbar-item-phone .off-navbar-link, .off-navbar .off-navbar-item-phone .off-navbar-link-phone {
+      color: black; }
+
+.active-link {
+  background-color: black;
+  color: white !important; }
+
+.header-default {
+  font-size: 30px; }
+
+.paragraph-default {
+  font-weight: 400;
+  font-size: 16px;
+  color: grey; }
+
+header {
+  height: 120px;
+  background-color: white;
+  position: relative; }
+  header .navbar {
+    padding-top: 45px; }
+    header .navbar .navbar-brand {
+      position: relative;
+      float: left;
+      font-size: 38px;
+      font-weight: 700;
+      color: black;
+      font-family: 'PT Sans', sans-serif;
+      font-weight: 700; }
+      header .navbar .navbar-brand .red-rectangle {
+        position: absolute;
+        width: 23px;
+        height: 42px;
+        background-color: red;
+        border-radius: 2px;
+        left: -40px;
+        z-index: 2;
+        bottom: 10px;
+        transform: skew(200deg); }
+      header .navbar .navbar-brand .black-rectangle {
+        left: -50px;
+        position: absolute;
+        width: 23px;
+        height: 42px;
+        border-radius: 2px;
+        background-color: black;
+        z-index: 1;
+        transform: skew(200deg); }
+    header .navbar .navbar-nav {
+      position: relative;
+      margin-left: auto; }
+      header .navbar .navbar-nav .nav-item {
+        padding: 0 5px;
+        color: black; }
+        header .navbar .navbar-nav .nav-item .nav-link {
+          font-size: 15px;
+          padding: 5px 13px;
+          letter-spacing: -1px;
+          color: black;
+          font-family: 'PT Sans', sans-serif;
+          font-weight: 700;
+          transition: all 50ms ease-in-out; }
+          header .navbar .navbar-nav .nav-item .nav-link:hover {
+            color: white;
+            background-color: black; }
+
+section#home {
+  position: relative;
+  overflow: hidden;
+  min-height: 650px; }
+  section#home .home-image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-attachment: fixed;
+    background-image: url("../images/homepage.jpg");
+    background-size: cover;
+    background-position: center; }
+  section#home .home-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 0;
+    transform: skew(200deg);
+    left: -48%; }
+  section#home .container {
+    position: relative;
+    z-index: 3; }
+  section#home h3 {
+    font-style: italic;
+    color: white;
+    font-size: 20px;
+    padding-top: 170px; }
+  section#home h1 {
+    color: #dc0000; }
+  section#home .home-list {
+    padding: 0; }
+    section#home .home-list .home-list-item {
+      margin: 12px 0px;
+      list-style-type: none;
+      color: white; }
+      section#home .home-list .home-list-item .home-list-item-icon {
+        border: 1px #dc0000 solid;
+        margin: 5px 18px 5px 0;
+        padding: 0px 4px;
+        border-radius: 60px; }
+        section#home .home-list .home-list-item .home-list-item-icon svg {
+          margin-top: -5px;
+          font-size: 14px;
+          color: red; }
+  section#home .home-button-group {
+    padding-top: 30px; }
+    section#home .home-button-group .white-button {
+      cursor: pointer;
+      margin: 5px;
+      background-color: white;
+      font-weight: 600;
+      padding: 12px 40px; }
+    section#home .home-button-group .transparent-button {
+      cursor: pointer;
+      margin: 5px;
+      border: 1px white solid;
+      color: white;
+      padding: 11px 40px;
+      font-weight: 600; }
+
+section#product {
+  min-height: 200px; }
+  section#product .product-box img {
+    width: 100%; }
+  section#product .product-box h3 {
+    font-size: 20px;
+    font-weight: 600; }
+  section#product .product-box h5 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #c80000; }
+  section#product .product-box h6 {
+    color: grey; }
