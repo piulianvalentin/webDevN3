@@ -14,53 +14,59 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
+	<link rel="stylesheet" href="owlcarousel/src/scss/owl.carousel.scss">
+	<link rel="stylesheet" href="owlcarousel/src/scss/owl.theme.default.scss">
 </head>
 
 <body>
-	<header>
-		<div class="off-navbar">
+	<header class="">
+		<div class=header-wrapper>
+			<div class="container">
+				<nav class="navbar navbar-expand-lg">
+					<a class="navbar-brand" href="#"><div class="red-rectangle"></div>
+						<div class="black-rectangle"></div>Blitzprofil</a>
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="" aria-controls="" aria-expanded="false" aria-label="">
+							<div></div>
+							<div></div>
+							<div></div>
+						</button>
+						<div class="navbar-collapse" id="">
+							<div class="off-navbar">
 								<div class="off-navbar-overlay"></div>
-								<div class="off-navbar-item"><a href="" class="off-navbar-link">CARIERS</a></div>
-								<div class="off-navbar-item"><a href="" class="off-navbar-link">CERE O COTATIE</a></div>
-								<div class="off-navbar-item"><a href="" class="off-navbar-link">CONTACT</a></div>
-								<div class="off-navbar-item-phone"><a href="" class="off-navbar-link-phone">+40 726 042 127</a></div>
+								<div class="off-navbar-item"><a href="#" class="off-navbar-link">CARIERS</a></div>
+								<div class="off-navbar-item"><a href="#" class="off-navbar-link">CERE O COTATIE</a></div>
+								<div class="off-navbar-item"><a href="#" class="off-navbar-link">CONTACT</a></div>
+								<div class="off-navbar-item-phone"><a href="#" class="off-navbar-link-phone">+40 726 042 127</a></div>
 							</div>
-		<div class="container">
-			<nav class="navbar navbar-expand-lg">
-				<a class="navbar-brand" href="#"><div class="red-rectangle"></div>
-					<div class="black-rectangle"></div>Blitzprofil</a>
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-					</button>
-					<div class="collapse navbar-collapse" id="navbarNav">
-						<ul class="navbar-nav">
-							<li class="nav-item">
-								<a class="nav-link active-link" href="#">BLITZPROFIL</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">PRODUSE</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">LOGISTICA</a>
-							</li><li class="nav-item">
-								<a class="nav-link" href="#">PORTOFOLIU</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">UTILE</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">CONTACT</a>
-							</li>
-						</ul>
-					</div>
-				</nav>
-			</div>	
+							<ul class="navbar-nav">
+								<li class="nav-item">
+									<a class="nav-link active-link" href="#">BLITZPROFIL</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">PRODUSE</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">LOGISTICA</a>
+								</li><li class="nav-item">
+									<a class="nav-link" href="#">PORTOFOLIU</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">UTILE</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">CONTACT</a>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</div>	
+			</div>			
 		</header>
 		<section id="home">
 			<div class="home-image"></div>
 			<div class="home-overlay"></div>
 			<div class="container">
-				<h3>Exclusiv la Blitzprofil</h3>
+				<p class="h3">Exclusiv la Blitzprofil</p>
 				<h1>Cea mai eficienta solutie:<br>Acoperisul Kubik</h1>
 				<ul class="home-list">
 					<li class="home-list-item"><span class="home-list-item-icon"><i class="fas fa-check"></i></span>Durata de peste 50 de ani</li>
@@ -75,44 +81,191 @@
 		</section>
 
 		<section id="product">
-			<div id="producet-left-arrow"><i class="far fa-angle-left"></i></div>
-			<div id="product-right-arrow"><i class="far fa-angle-right"></i></div>
 			<div class="container">
 				<div class="row justify-content-center pt-5">
-					<div class="col-sm-7 text-center">
-						<h3 class="">Lorem ipsum.</h3>
-						<h6 class="paragraph-default">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit ducimus quos atque libero non voluptates?</h6>
+					<div class="col-sm-9 col-md-7 text-center">
+						<h1 class="h1">Produse BlitzProfil</h1>
+						<p class="h6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit ducimus quos atque libero non voluptates?</p>
 					</div>
 				</div>
 				<div class="row mt-5">
-					<div class="col-md-4">
-						<div class="product-box px-3 pb-5">
-							<img class="rounded" src="images/homepage.jpg" alt="">
-							<h3 class="py-4 mb-0">Lorem ipsum.</h3>
-							<h6 class="pt-0 pb-3 paragraph-default">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, atque.</h6>
-							<h5 class="">Vezi detalii produs</h5>
+					<div class="col-md-4" >
+						<div class="product-box pb-5">
+							<img class="" src="images/tigla.png" alt="">
+							<p class="py-4 mb-0 h3">Tigle Metalice</p>
+							<p class="pt-0 pb-4 paragraph-default h6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, atque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, nihil. </p>
+							<p class="h5">Vezi detalii produs</p>
 						</div>
 					</div>
-					<div class="col-md-4">
-						<div class="product-box px-3 pb-5">
-							<img class="rounded" src="images/homepage.jpg" alt="">
-							<h3 class="py-4 mb-0">Lorem ipsum.</h3>
-							<h6 class="pt-0 pb-3 paragraph-default">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, atque.</h6>
-							<h5 class="">Vezi detalii produs</h5>
+					<div class="col-md-4" >
+						<div class="product-box pb-5">
+							<img class="" src="images/tigla.png" alt="">
+							<p class="py-4 mb-0 h3">Tigle Metalice</p>
+							<p class="pt-0 pb-4 paragraph-default h6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, atque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, nihil. </p>
+							<p class="h5">Vezi detalii produs</p>
 						</div>
 					</div>
-					<div class="col-md-4">
-						<div class="product-box px-3 pb-5">
-							<img class="rounded" src="images/homepage.jpg" alt="">
-							<h3 class="py-4 mb-0">Lorem ipsum.</h3>
-							<h6 class="pt-0 pb-3 paragraph-default">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, atque.</h6>
-							<h5 class="">Vezi detalii produs</h5>
+					<div class="col-md-4" >
+						<div class="product-box pb-5">
+							<img class="" src="images/tigla.png" alt="">
+							<p class="py-4 mb-0 h3">Tigle Metalice</p>
+							<p class="pt-0 pb-4 paragraph-default h6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, atque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, nihil. </p>
+							<p class="h5">Vezi detalii produs</p>
 						</div>
 					</div>
 				</div>				
 			</div>
 
 		</section>
+
+		<section id="project">
+			<div class="container-fluid">
+				<div class="row justify-content-center project-wrapper">
+					<div class="col-md-7 col-sm-9">
+						<h1 class="h1 text-center">Lorem ipsum dolor sit amet.</h1>
+						<p class="h6 text-center pt-1 pb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit harum eos officia sapiente ex deleniti aperiam architecto adipisci.</p>
+					</div>	
+				</div>
+				<div class="row project-wrapper">
+					<div class="col-xl-3 col-sm-6 py-3">
+						<div class="project-box">
+							<div class="project-box-overlay"></div>
+							<img src="images/roof.jpg" alt="">
+							<div class="project-box-text">
+								<p class="h7 m-0"><i>Kubik</i></p>
+								<p class="h3 m-0">Tigla Metalica</p>
+								<p class="h1 m-0">MATA</p>
+							</div>
+						</div>			
+					</div>
+					<div class="col-xl-3 col-sm-6 py-3">
+						<div class="project-box">
+							<div class="project-box-overlay"></div>
+							<img src="images/roof.jpg" alt="">
+							<div class="project-box-text">
+								<p class="h7 m-0"><i>Kubik</i></p>
+								<p class="h3 m-0">Tigla Metalica</p>
+								<p class="h1 m-0">MATA</p>
+							</div>
+						</div>			
+					</div>
+					<div class="col-xl-3 col-sm-6 py-3">
+						<div class="project-box">
+							<div class="project-box-overlay"></div>
+							<img src="images/roof.jpg" alt="">
+							<div class="project-box-text">
+								<p class="h7 m-0"><i>Kubik</i></p>
+								<p class="h3 m-0">Tigla Metalica</p>
+								<p class="h1 m-0">MATA</p>
+							</div>
+						</div>			
+					</div>
+					<div class="col-xl-3 col-sm-6 py-3">
+						<div class="project-box">
+							<div class="project-box-overlay"></div>
+							<img src="images/roof.jpg" alt="">
+							<div class="project-box-text">
+								<p class="h7 m-0"><i>Kubik</i></p>
+								<p class="h3 m-0">Tigla Metalica</p>
+								<p class="h1 m-0">MATA</p>
+							</div>
+						</div>			
+					</div>
+				</div>			
+			</div>
+			<div class="project-button text-center">VEZI TOATE PROIECTELE</div>
+		</section>
+		<section id="trust">
+			<div class="trust-overlay"></div>
+			<div class="trust-background"></div>
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="trust-box col-sm-6">
+						<h1 class="">Incredere de durata</h1>
+						<p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis distinctio ad perferendis possimus magni eum adipisci quae! Lorem ipsum dolor sit amet.</p>
+						<div class="trust-button">MAI MULT DESPRE NOI</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="client">
+			<div class="container">
+				<div class="row">
+					<div class="client-text col-md-6">
+						<div class="h1">Avem mii de clienti multumiti</div>
+						<div class="client-text-window">
+							<div class="client-text-wrapper">
+								<div class="client-text-1">
+									<div class="h6 py-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, molestiae eius. Et eligendi eius labore reiciendis natus. Rerum, aperiam, quisquam.</div>
+									<div class="client-text-1-name">Michelle Anderson</div>
+									<div class="client-text-1-title">Partner, Brevin</div>
+								</div>
+								<div class="client-text-1">
+									<div class="h6 py-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima amet eos recusandae itaque iusto similique dicta saepe placeat ullam ex?.</div>
+									<div class="client-text-1-name">Josh Brolin</div>
+									<div class="client-text-1-title">Consultant, Berlin</div>
+								</div>
+								<div class="client-text-1">
+									<div class="h6 py-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, molestiae eius. Et eligendi eius labore reiciendis natus. Rerum, aperiam, quisquam.</div>
+									<div class="client-text-1-name">Michelle Anderson</div>
+									<div class="client-text-1-title">Partner, Brevin</div>
+								</div>
+							</div>
+						</div>
+						<div class="client-text-triggers">
+							<div class="trigger-active client-text-trigger">01</div>
+							<div class=" client-text-trigger">02</div>
+							<div class=" client-text-trigger">03</div>
+						</div>
+						
+						<div class="client-list">
+							
+						</div>
+					</div>
+					<span class="col-md-6">
+						<div class="client-wrap">
+							<div class="client-image-slider">
+								<div class="clients-overlay-red clients-overlay-1">
+									<img src="images/profile2.jpg" alt="">
+								</div>
+								<div class="clients-overlay-grey clients-overlay-2">
+									<img src="images/profile2.jpg" alt="">
+								</div>
+								<div class="client-image1">
+									<img src="images/profile2.jpg" alt="">
+								</div>
+								<div class="client-image2">
+									<img src="images/profile2.jpg" alt="">
+								</div>
+								<div class="client-image3">
+									<img src="images/profile2.jpg" alt="">
+								</div>
+							</div>
+							<div class="client-icon"><i class="fas fa-quote-right"></i></div>
+						</div>
+
+					</span>
+				</div>
+			</div>
+		</section>
+		<section id="advices">
+			<div class="red-background"></div>
+			<div class="container text-center">
+				<div class="advices-text">
+					<h1>SFATURI CUMPARARE</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos natus, ea perspiciatis nemo minus sunt culpa. Reiciendis nostrum illo, adipisci.</p>
+				</div>
+				<div class="trust-button">CONSULTA UN SPECIALIST</div>
+			</div>
+		</section>
+
+		<footer id="footer">
+			
+		</footer>
+		<script src="owlcarousel/src/js/owl.carousel.js"></script>
+		<script src="js/jquery.js"></script>
+		<script src="js/main.js"></script>
 	</body>
 
 	</html>
