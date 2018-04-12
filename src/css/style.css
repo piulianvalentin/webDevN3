@@ -1,9 +1,8 @@
+@charset "UTF-8";
 body {
   margin: 0;
   font-family: 'PT Sans', sans-serif;
-  min-height: 6000px;
   position: relative;
-  min-width: 320px;
   overflow-x: hidden; }
 
 .trust-button {
@@ -14,33 +13,25 @@ body {
   font-weight: 600;
   padding: 12px 23px; }
 
-.clients-overlay-0 {
-  z-index: 2;
-  left: -11%; }
-
-.clients-overlay-1 {
-  z-index: 4;
-  left: 34%; }
-
-.clients-overlay-2 {
-  z-index: 6;
-  right: -11%; }
-
-.clients-overlay-red {
-  width: 40%;
-  transform: skewX(200deg);
+.client-image-overlay-red .client-image-overlay-1 {
   position: absolute;
-  background-color: rgba(200, 0, 0, 0.6); }
-  .clients-overlay-red img {
-    opacity: 0; }
+  left: -10%;
+  width: 500px !important;
+  height: 500px;
+  background-color: rgba(200, 0, 0, 0.6);
+  z-index: 10; }
 
-.clients-overlay-grey {
-  width: 40%;
-  transform: skewX(200deg);
+.client-image-scale img {
+  transform: skewX(-200deg) scale(1.1) !important; }
+
+.client-image-overlay-grey .client-image-overlay-1 {
   position: absolute;
-  background-color: rgba(100, 100, 100, 0.6); }
-  .clients-overlay-grey img {
-    opacity: 0; }
+  left: -10%;
+  width: 500px !important;
+  height: 500px;
+  background-color: rgba(200, 200, 200, 0.6);
+  z-index: 10;
+  transition: all 250ms ease-in-out; }
 
 .trigger-active {
   text-align: center;
@@ -55,7 +46,8 @@ body {
   margin: auto;
   color: white;
   font-weight: 600;
-  padding: 17px 0px !important; }
+  padding: 13.5px 0px !important;
+  margin-top: 39px; }
 
 .h1.h1 {
   font-family: 'PT Sans', sans-serif;
@@ -101,7 +93,7 @@ body {
 header {
   width: 100%;
   overflow: hidden;
-  height: 120px;
+  height: 122px;
   position: relative;
   z-index: 220; }
   header .off-navbar {
@@ -112,22 +104,23 @@ header {
     top: 0px;
     left: 43.5%;
     font-family: 'PT Sans', sans-serif;
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 900; }
     header .off-navbar .off-navbar-overlay {
       position: absolute;
-      left: -4.5%;
+      left: -4.6%;
       width: 100%;
       height: 100%;
       background-color: rgba(200, 200, 200, 0.3);
       z-index: 1;
       top: 0;
-      transform: skew(200deg); }
+      transform: skew(197deg); }
     header .off-navbar .off-navbar-item-phone {
-      margin-left: 110px; }
+      margin-left: 90px !important; }
     header .off-navbar .off-navbar-item, header .off-navbar .off-navbar-item-phone {
       display: inline-block;
-      padding: 0px 20px; }
+      padding: 5px 65px 0 0;
+      margin-left: -20px; }
       header .off-navbar .off-navbar-item .off-navbar-link, header .off-navbar .off-navbar-item .off-navbar-link-phone, header .off-navbar .off-navbar-item-phone .off-navbar-link, header .off-navbar .off-navbar-item-phone .off-navbar-link-phone {
         color: black; }
       header .off-navbar .off-navbar-item .off-navbar-item, header .off-navbar .off-navbar-item-phone .off-navbar-item {
@@ -142,31 +135,34 @@ header {
       margin: 4px 7px; }
     header .navbar .navbar-toggler:focus {
       outline: none; }
-    header .navbar .navbar-brand {
+    header .navbar .navbar-brand.navbar-brand {
+      display: inline-block;
       position: relative;
-      float: left;
-      font-size: 38px;
+      font-size: 43px;
       font-weight: 700;
       color: black;
       font-family: 'PT Sans', sans-serif;
-      font-weight: 700; }
-      header .navbar .navbar-brand .red-rectangle {
+      font-weight: 700;
+      margin-top: -11px;
+      margin-left: 27px; }
+      header .navbar .navbar-brand.navbar-brand .red-rectangle {
         position: absolute;
-        width: 23px;
-        height: 42px;
+        width: 27px;
+        height: 53px;
         background-color: red;
-        left: -40px;
+        left: -41px;
         z-index: 2;
-        bottom: 10px;
-        transform: skew(200deg); }
-      header .navbar .navbar-brand .black-rectangle {
-        left: -50px;
+        bottom: 2px;
+        transform: skew(196.5deg); }
+      header .navbar .navbar-brand.navbar-brand .black-rectangle {
+        left: -52px;
+        bottom: 12px;
         position: absolute;
-        width: 23px;
-        height: 42px;
+        width: 27px;
+        height: 53px;
         background-color: black;
         z-index: 1;
-        transform: skew(200deg); }
+        transform: skew(196.5deg); }
     header .navbar .navbar-nav {
       position: relative;
       margin-left: auto; }
@@ -174,9 +170,10 @@ header {
         padding: 0 5px;
         color: black; }
         header .navbar .navbar-nav .nav-item .nav-link {
+          margin-top: 10px;
+          margin-left: 0px;
           font-size: 15px;
-          padding: 5px 13px;
-          letter-spacing: -1px;
+          padding: 5px 15px;
           color: black;
           font-family: 'PT Sans', sans-serif;
           font-weight: 700;
@@ -188,7 +185,7 @@ header {
 section#home {
   position: relative;
   overflow: hidden;
-  min-height: 650px; }
+  min-height: 740px; }
   section#home .home-image {
     width: 100%;
     height: 100%;
@@ -203,69 +200,86 @@ section#home {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
     z-index: 0;
-    transform: skew(200deg);
-    left: -48%; }
+    transform: skew(197deg);
+    left: -49.1%; }
   section#home .container {
     position: relative;
     z-index: 3; }
   section#home .h3 {
+    margin-left: -16px;
     font-style: italic;
     color: white;
     font-size: 20px;
-    padding-top: 170px; }
+    padding-top: 205px; }
   section#home h1 {
-    color: #dc0000; }
+    color: #dc0000;
+    margin-left: -16px;
+    letter-spacing: -1.3px; }
   section#home .home-list {
-    padding-left: 40px; }
+    margin-top: 24px !important;
+    padding: 0; }
     section#home .home-list .home-list-item {
-      margin: 12px 0px;
+      letter-spacing: 2px;
+      margin: 13px 0px;
       list-style-type: none;
       color: white; }
       section#home .home-list .home-list-item .home-list-item-icon {
         border: 1px #dc0000 solid;
-        margin: 5px 18px 5px 0;
+        margin: 5px 14px 10px -16px;
         padding: 0px 4px;
         border-radius: 60px; }
         section#home .home-list .home-list-item .home-list-item-icon svg {
           margin-top: -5px;
-          font-size: 14px;
+          font-size: 12px;
           color: #dc0000; }
   section#home .home-button-group {
     padding-top: 30px;
-    padding-bottom: 30px; }
+    padding-bottom: 30px;
+    margin-left: -21px;
+    margin-top: -3px; }
     section#home .home-button-group .white-button {
       display: inline-block;
       cursor: pointer;
       margin: 5px 5px 10px 5px;
       background-color: white;
       font-weight: 600;
-      padding: 12px 40px; }
+      padding: 13px 48px; }
     section#home .home-button-group .transparent-button {
-      display: inline-block;
-      cursor: pointer;
-      margin: 5px;
       border: 1px white solid;
       color: white;
-      padding: 11px 40px;
-      font-weight: 600; }
+      display: inline-block;
+      cursor: pointer;
+      margin: 5px 5px 10px 5px;
+      font-weight: 600;
+      padding: 13px 48px; }
 
 section#product {
-  padding-top: 90px;
-  min-height: 200px; }
+  padding-top: 70px;
+  min-height: 230px;
+  padding-bottom: 63px; }
+  section#product h1 {
+    margin-left: 81px;
+    margin-bottom: 25px; }
   section#product .product-box {
+    margin-top: 10px;
+    margin-left: 18px;
     width: 100%; }
+    section#product .product-box .h3 {
+      margin-top: 0 !important;
+      padding-top: 35px !important;
+      margin-bottom: 0 !important; }
     section#product .product-box img {
-      width: 100%; }
+      width: 102.6%; }
 
 section#project {
   background-color: #f7f8f9;
   padding-top: 45px;
-  padding-bottom: 90px; }
+  padding-bottom: 83px; }
   section#project .project-wrapper {
     padding: 45px 5px 5px 5px; }
   section#project img {
-    width: 100%;
-    height: 100%; }
+    width: 127%;
+    height: auto; }
   section#project .project-box {
     overflow: hidden;
     position: relative;
@@ -273,7 +287,7 @@ section#project {
     section#project .project-box .project-box-text {
       color: white;
       position: absolute;
-      top: 30%;
+      top: 41%;
       left: 25px;
       z-index: 10; }
     section#project .project-box .project-box-overlay {
@@ -293,32 +307,35 @@ section#trust {
   position: relative;
   background-position: center;
   background-size: cover;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  padding-bottom: 10px; }
   section#trust .trust-overlay {
     position: absolute;
     width: 100%;
     height: 100%;
     background: linear-gradient(to right, #3c3c3c, rgba(60, 60, 60, 0.8)); }
   section#trust .trust-box {
-    margin-top: 70px;
+    margin-top: 69px;
     margin-bottom: 90px;
     color: white !important;
-    padding: 50px 20px 65px 25px;
+    padding: 51px 20px 54px 25px;
     background-color: #fa3c3c; }
     section#trust .trust-box h1 {
       font-family: 'PT Sans', sans-serif;
       font-weight: 600;
-      font-size: 30px; }
+      font-size: 30px;
+      margin-top: 11px; }
     section#trust .trust-box p {
       color: white;
-      font-size: 17px; }
+      font-size: 17px;
+      margin-bottom: 19px; }
 
 section#client {
-  padding-top: 120px;
-  padding-bottom: 100px; }
+  padding-top: 205px;
+  padding-bottom: 148px; }
   section#client .client-text {
     padding-top: 50px;
-    overflow-x: hidden; }
+    overflow: hidden; }
     section#client .client-text .client-text-window {
       width: 380px;
       overflow: hidden; }
@@ -326,7 +343,7 @@ section#client {
         position: relative;
         width: 1500px; }
         section#client .client-text .client-text-window .client-text-wrapper .client-text-1 {
-          width: 300px;
+          width: 400px;
           float: left;
           margin-right: 80px; }
     section#client .client-text .h6 {
@@ -366,18 +383,22 @@ section#client {
     margin-bottom: -20px;
     z-index: 10; }
   section#client .client-image-slider {
+    margin-top: 13px;
     height: 300px;
     text-align: center;
-    width: 500px;
+    width: 540px;
     overflow: hidden !important;
     position: relative; }
     section#client .client-image-slider div {
+      transition: all 250ms ease-in-out;
       width: 45%;
       transform: skewX(200deg);
       position: absolute;
       overflow: hidden;
+      text-align: center;
       display: inline-block; }
       section#client .client-image-slider div img {
+        transition: all 250ms ease-in-out;
         transform: skewX(-200deg);
         width: 130%; }
     section#client .client-image-slider .client-image1 {
@@ -396,9 +417,9 @@ section#client {
 
 section#advices {
   width: 100%;
-  min-height: 235px;
   background-color: #232323;
-  position: relative; }
+  position: relative;
+  padding-bottom: 73px; }
   section#advices .red-background {
     width: 55%;
     background-color: #ff3c3c;
@@ -411,7 +432,7 @@ section#advices {
     padding-top: 70px;
     padding-bottom: 50px;
     position: relative;
-    z-index: 100;
+    z-index: 3;
     color: white;
     float: left; }
     section#advices .advices-text h1 {
@@ -420,21 +441,91 @@ section#advices {
   section#advices div.trust-button {
     margin: 120px 0 0 160px;
     position: relative;
-    z-index: 100; }
+    z-index: 3; }
+
+section#info {
+  background-color: #282828;
+  color: #d2d2d2;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  font-family: 'PT Sans', sans-serif; }
+  section#info .info-box {
+    padding-bottom: 20px;
+    font-size: 13px;
+    font-weight: 300; }
+    section#info .info-box ul {
+      list-style: none; }
+      section#info .info-box ul > li {
+        cursor: pointer;
+        padding: 7px 0; }
+        section#info .info-box ul > li:hover:before {
+          color: white; }
+        section#info .info-box ul > li:before {
+          content: "• "; }
+  section#info .info-box-contact {
+    padding-bottom: 40px;
+    font-size: 14px; }
+    section#info .info-box-contact > div {
+      cursor: pointer;
+      padding: 15px 0 15px 0;
+      border-bottom: 1px solid #646464; }
+      section#info .info-box-contact > div div {
+        display: inline-block;
+        padding-right: 10px; }
+        section#info .info-box-contact > div div svg {
+          font-size: 23px; }
+  section#info .info-box-newsletter {
+    background-color: #464646;
+    width: 260px;
+    padding: 20px 25px 30px 25px; }
+    section#info .info-box-newsletter .newsletter-icon {
+      font-size: 35px;
+      height: 40px; }
+    section#info .info-box-newsletter p {
+      margin-top: 10px; }
+    section#info .info-box-newsletter input {
+      margin-top: 20px;
+      background-color: transparent;
+      border: none;
+      border-bottom: 1px solid #646464;
+      text-align: center;
+      padding-bottom: 5px;
+      color: #646464; }
+      section#info .info-box-newsletter input:focus {
+        outline: none;
+        color: #787878; }
+    section#info .info-box-newsletter .newsletter-button {
+      background-color: #d81515;
+      font-weight: 600;
+      font-size: 14px;
+      padding: 7px 20px;
+      margin-top: 18px;
+      cursor: pointer;
+      display: inline-block; }
+
+#footer {
+  background-color: #282828;
+  color: #d2d2d2;
+  font-size: 15px;
+  border-top: 1px solid #646464; }
 
 @media screen and (max-width: 1200px) {
   #home .container h1 {
     font-size: 35px; }
+  .navbar-nav {
+    padding-left: 120px !important; }
   .off-navbar {
-    left: 34% !important; }
+    left: 37% !important; }
     .off-navbar .off-navbar-item-phone {
       margin-left: 100px !important; }
     .off-navbar .off-navbar-overlay {
-      left: 2.5% !important; } }
+      left: -0.5% !important; } }
 
 @media (max-width: 1300px) and (min-width: 1200px) {
   .navbar-brand {
-    margin-left: 40px !important; } }
+    margin-left: 60px !important; }
+  #home .container > p {
+    margin-left: 20px !important; } }
 
 @media (max-width: 1100px) and (min-width: 992px) {
   .navbar-brand {
@@ -480,6 +571,10 @@ section#advices {
     margin-left: 40px !important; } }
 
 @media (max-width: 768px) {
+  #info {
+    text-align: center; }
+    #info .info-box-contact svg {
+      margin-left: 30px; }
   #home {
     text-align: center !important; }
     #home .home-list {
